@@ -65,6 +65,15 @@ local plugins = {
     end,
   },
 
+  {
+    "filipdutescu/renamer.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim"
+    },
+    config = function()
+      require("renamer").setup()
+    end,
+  }
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

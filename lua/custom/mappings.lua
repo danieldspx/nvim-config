@@ -15,6 +15,8 @@ M.general = {
 
     -- LazyGit remap
     ["<leader>gg"] = { ":LazyGit<CR>", "Open LazyGit" },
+
+    ["<leader>rr"] = {":lua require('renamer').rename()<CR>", "Rename variable"}
   },
   v = {
     [">"] = { ">gv", "indent"},
