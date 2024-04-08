@@ -4,6 +4,10 @@ local M = {}
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    
+    -- Insert texts
+    ["<leader>cl"] = { "i/**  */<Esc>bhi" },
+    ["<leader>cb"] = { "i/**<CR><CR><BS>/<Esc>ka<Space>" },
 
     --  format with conform
     ["<leader>fm"] = {

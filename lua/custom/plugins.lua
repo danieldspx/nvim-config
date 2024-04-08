@@ -73,7 +73,23 @@ local plugins = {
     config = function()
       require("renamer").setup()
     end,
-  }
+  },
+
+  {
+    "hedyhli/outline.nvim",
+    cmd = { "Outline", "OutlineOpen" },
+    keys = { -- Example mapping to toggle outline
+      { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
+    },
+    config = function()
+      require("outline").setup({
+        keymaps = {
+          up_and_jump = '<up>',
+          down_and_jump = '<down>',
+        }
+      })
+    end,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
