@@ -20,7 +20,11 @@ M.general = {
     -- LazyGit remap
     ["<leader>gg"] = { ":LazyGit<CR>", "Open LazyGit" },
 
-    ["<leader>rr"] = {":lua require('renamer').rename()<CR>", "Rename variable"}
+    ["<leader>rr"] = {":lua require('renamer').rename()<CR>", "Rename variable"},
+
+    -- Vim Sneak
+    ["<C-n>"] = { "<Plug>Sneak_;", "Next sneak match" },
+    ["<C-p>"] = { "<Plug>Sneak_,", "Previous sneak match" },
   },
   v = {
     [">"] = { ">gv", "indent"},

@@ -90,6 +90,11 @@ local plugins = {
       })
     end,
   },
+
+  {
+    "justinmk/vim-sneak",
+    lazy = false
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
